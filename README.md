@@ -34,3 +34,4 @@
         vue init OnsenUI/vue-pwa-webpack hello-world
 >> 兩個都可以，我是用cordova 版本
 
+###### 開始使用
