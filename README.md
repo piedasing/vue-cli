@@ -31,7 +31,7 @@
         
 > 方法二:
 
->> cordov 版本:
+>> cordova 版本:
 
         vue init OnsenUI/vue-cordova-webpack hello-world
 >> pwa 版本:
@@ -39,7 +39,7 @@
         vue init OnsenUI/vue-pwa-webpack hello-world
 >> 兩個都可以，我是用cordova 版本
 
-> 如果有要用 pug 以及 sass，不需要的話可以忽略
+###### 如果有要用 pug 以及 sass，不需要的話可以忽略
 
         npm install pug pug-loader pug-filters --save
         
