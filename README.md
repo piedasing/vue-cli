@@ -14,6 +14,7 @@
 > 開啟專案，執行 npm start ，如果安裝正確，即可開啟 localhost
 
 > 安裝 onsenui相關套件
+
         npm install onsenui vue-onsenui --save-dev
         
 >> 安裝完要在main.js將onsenui的相關css與js引入
