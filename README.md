@@ -6,8 +6,10 @@
 
 ###### 安裝 vue-cli
         npm install -g vue-cli
+        
 ###### 安裝 onsenui
 > 方法一: 建立vue專案
+
         vue init webpack <projectname>
 > 開啟專案，執行 npm start ，如果安裝正確，即可開啟 localhost
 
