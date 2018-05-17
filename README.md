@@ -37,4 +37,4 @@
 ###### 開始使用
 > 開啟main.js，查看是否正確引入onsenui相關套件
 
-![main.js]()
+![main.js](https://github.com/piedasing/vue-cli/blob/master/imgs/main.png)
