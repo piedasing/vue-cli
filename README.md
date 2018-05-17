@@ -38,3 +38,13 @@
 > 開啟main.js，查看是否正確引入onsenui相關套件
 
 ![main.js](https://github.com/piedasing/vue-cli/blob/master/imgs/main.png)
+
+> 在App.vue放上 navigator
+
+![App.vue](https://github.com/piedasing/vue-cli/blob/master/imgs/app.png)
+
+> data中pageStack設定的[Home]即為要顯示的首頁
+
+> pageStack 要與 navigator 中的 page-stack 綁定(v-bind)，注意大小寫
+
+> component元件則是以v-for來呼叫其他頁面的component
