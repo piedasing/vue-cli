@@ -1,6 +1,6 @@
 ### vue-cli + Onsen UI
 
-> 用vue搭配onsenui來製作手機優先(mobile first)的網頁
+> 用 vue 搭配 onsenui 來製作手機優先(mobile first)的網頁
 
 ##### 安裝相關套件
 
@@ -9,6 +9,13 @@
 ###### 安裝完成後，建立vue專案
         vue init webpack <projectname>
 > 開啟專案，執行 npm start ，如果安裝正確，即可開啟 localhost
+
+> 如果要用 pug 以及 sass，不需要的話可以忽略
+
+        npm install pug pug-loader pug-filters --save
+        
+        npm install sass sass-loader node-sass --save
+
 ###### 安裝 onsenui
 > 方法一:
 
