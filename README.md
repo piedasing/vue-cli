@@ -76,6 +76,8 @@
 
 > 接收後，就會將發送事件的 Page 參數 push 到 pageStack，就可以換頁囉!
 
+***
+
 > 其他要切換的Page頁面
 
 ![Page1.vue](https://github.com/piedasing/vue-cli/blob/master/imgs/page.png "Page1.vue")
