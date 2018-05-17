@@ -15,7 +15,7 @@
 
 > 安裝 onsenui相關套件
 
-        npm install onsenui vue-onsenui --save-dev
+        npm install onsenui vue-onsenui --save-dev
         
 >> 安裝完要在main.js將onsenui的相關css與js引入
 
