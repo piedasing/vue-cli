@@ -50,19 +50,19 @@
 
 ![main.js](https://github.com/piedasing/vue-cli/blob/master/imgs/main.png "main.js")
 
+***
+
 > 打開 App.vue，放上換頁最重要的元件 navigator
 
 ![App.vue](https://github.com/piedasing/vue-cli/blob/master/imgs/app.png "App.vue")
 
-> data中pageStack設定的[Home]即為要顯示的首頁
+1. data中pageStack設定的[Home]即為要顯示的首頁
+2. pageStack 要與 navigator 中的 page-stack 綁定(v-bind)，注意大小寫
+3. component tag 則是用(v-for)來顯示存放在 pageStack 的 page
+4. @push-page="onPush" 則是監聽(v-on)是否有 push-page 這個事件發生
+5. :key 是綁定 page 的 name ，如果沒有給key，那麼Osen UI就不會執行換頁<!!!很重要!!!>
 
-> pageStack 要與 navigator 中的 page-stack 綁定(v-bind)，注意大小寫
-
-> component tag 則是用(v-for)來顯示存放在 pageStack 的 page
-
-> @push-page="onPush" 則是監聽(v-on)是否有 push-page 這個事件發生
-
-> :key 是綁定 page 的 name ，如果沒有給key，那麼Osen UI就不會執行換頁<!!!很重要!!!>
+***
 
 > 接下來換寫 Home.vue
 
@@ -82,4 +82,4 @@
 
 > 記得也是要把v-ons-page放在最外層
 
-> 完成拉~~
+> 最後再加上一點 css 裝飾一下就完成拉~~
