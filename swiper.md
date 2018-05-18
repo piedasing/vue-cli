@@ -24,3 +24,30 @@
              prevEl: '.swiper-button-prev'
            }
          })
+
+#### 在 html 中，添加 Swiper 作用的區域
+> '.swiper-container' 要跟初始化的class名稱一樣，結構如下:
+
+        .swiper-container
+          .swiper-wrapper
+            .swiper-slide
+            .swiper-slide
+            .swiper-slide
+                  .
+                  .
+                  .
+          .swiper-pagination
+          .swiper-button-prev
+          .swiper-button-next
+          .swiper-scrollbar
+
+
+
+
+
+
+
+
+
+
+
