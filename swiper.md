@@ -4,10 +4,12 @@
 
         npm install swiper --save
 
-#### 在想要使用 Swiper 的頁面引入，或是創立一個 Swiper.vue
+#### 在想要使用 Swiper 的頁面引入，或是另外創建一個 Swiper.vue
 
-        import Swiper from 'swiper'
+        import Swiper from 'swiper'
         import 'swiper/dist/css/swiper.min.css'
+        
+![Swiper.vue](https://github.com/piedasing/vue-cli/blob/swiper/imgs/swiper/swiper.png "Swiper.vue")
 
 #### 在 mounted 中初始化 Swiper
 
@@ -45,7 +47,9 @@
 
 > '.swiper-pagination'、'.swiper-button-prev/next'、'.swiper-scrollbar':是輪播圖的元件可選擇要不要用
 
-> 以上步驟結束即可完成 Swiper 的運作
+> page參考:
+
+![Page.vue](https://github.com/piedasing/vue-cli/blob/swiper/imgs/swiper/page1.png "Page.vue")
 
 > 如果有使用 webpack 的 eslint 套件，會遇到 'no-new' 的錯誤，只要到 eslintrc.js內新增
         
@@ -53,8 +57,20 @@
           'no-new': 0
         }
 
-> 就可以解決囉
+>> 以上步驟結束即可完成 Swiper 的運作
 
+> 但是，隨著 Slide 的頁面越來越多，撰寫上也越來越複雜，會變得不好製作及編排頁面
 
+#### 修改
 
+> 將上面的 Page 頁面改成呼叫 Swiper 這個 component
 
+> 藉由 Swiper 使用 props 接收參數，就可以達到簡單管理，又能輕鬆在不同頁面中產生不同內容的輪播圖
+
+> Page 改成:
+
+![Page.vue](https://github.com/piedasing/vue-cli/blob/swiper/imgs/swiper/page2.png "Page.vue")
+
+> Swiper:
+
+![Swiper.vue](https://github.com/piedasing/vue-cli/blob/swiper/imgs/swiper/swiper.png "Swiper.vue")
