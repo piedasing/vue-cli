@@ -30,19 +30,20 @@
 
         .swiper-container
           .swiper-wrapper
-            .swiper-slide
-            .swiper-slide
-            .swiper-slide
+            .swiper-slide Slide1
+            .swiper-slide Slide2
+            .swiper-slide Slide3
                   .
                   .
                   .
-          .swiper-pagination
-          .swiper-button-prev
-          .swiper-button-next
-          .swiper-scrollbar
+          .swiper-pagination  //optional
+          .swiper-button-prev  //optional
+          .swiper-button-next  //optional
+          .swiper-scrollbar  //optional
 
+> '.swiper-slide':輪播圖的內容
 
-
+> '.swiper-pagination'、'.swiper-button-prev/next'、'.swiper-scrollbar':是輪播圖的元件可選擇要不要用
 
 
 
