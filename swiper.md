@@ -6,8 +6,10 @@
 
 #### 在想要使用 Swiper 的頁面引入，或是創立一個 Swiper.vue
 
-        import Swiper from 'swiper'
+        import Swiper from 'swiper'
         import 'swiper/dist/css/swiper.min.css'
+        
+![Swiper.vue](https://github.com/piedasing/vue-cli/blob/swiper/imgs/swiper/swiper.png "Swiper.vue")
 
 #### 在 mounted 中初始化 Swiper
 
