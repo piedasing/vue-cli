@@ -47,9 +47,7 @@
 
 > '.swiper-pagination'、'.swiper-button-prev/next'、'.swiper-scrollbar':是輪播圖的元件可選擇要不要用
 
-> 以上步驟結束即可完成 Swiper 的運作
-
-> page參考
+> page參考:
 
 ![Page.vue](https://github.com/piedasing/vue-cli/blob/swiper/imgs/swiper/page1.png "Page.vue")
 
@@ -59,8 +57,12 @@
           'no-new': 0
         }
 
-> 就可以解決囉
+>> 以上步驟結束即可完成 Swiper 的運作
 
+> 但是，隨著 Slide 的頁面越來越多，撰寫上也越來越複雜，會變得不好製作及編排頁面
 
+> 將上面的 Page 頁面改成呼叫 Swiper 這個 component，藉由v-bind傳遞參數給 child，就可以達到簡單管理，又能輕鬆製作不同內容的輪播圖
 
+> Page 改成:
 
+![Page.vue](https://github.com/piedasing/vue-cli/blob/swiper/imgs/swiper/page2.png "Page.vue")
