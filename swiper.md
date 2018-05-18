@@ -61,8 +61,16 @@
 
 > 但是，隨著 Slide 的頁面越來越多，撰寫上也越來越複雜，會變得不好製作及編排頁面
 
-> 將上面的 Page 頁面改成呼叫 Swiper 這個 component，藉由v-bind傳遞參數給 child，就可以達到簡單管理，又能輕鬆製作不同內容的輪播圖
+#### 修改
+
+> 將上面的 Page 頁面改成呼叫 Swiper 這個 component
+
+> 藉由 Swiper 使用 props 接收參數，就可以達到簡單管理，又能輕鬆在不同頁面中產生不同內容的輪播圖
 
 > Page 改成:
 
 ![Page.vue](https://github.com/piedasing/vue-cli/blob/swiper/imgs/swiper/page2.png "Page.vue")
+
+> Swiper:
+
+![Swiper.vue](https://github.com/piedasing/vue-cli/blob/swiper/imgs/swiper/swiper.png "Swiper.vue")
