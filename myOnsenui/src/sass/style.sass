@@ -1,0 +1,59 @@
+@mixin size($w,$h:$w)
+  width: $w
+  height: $h
+  
+html,body
+  +size(450px,100%)
+  margin: 0 auto
+
+#app
+  +size(100%)
+  font-family: 'Avenir', Helvetica, Arial, sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  text-align: center
+  color: #2c3e50
+  margin-top: 60px
+
+.grid-container
+  +size(100%)
+  display: grid
+  grid-template-columns: 1fr 1fr  // 50% 50%
+  grid-auto-rows: auto
+  grid-gap: 5px
+  overflow: hidden
+
+.grid-item
+  +size(100%)
+  grid-row: 2/span
+  justify-self: center
+  align-self: center
+  i
+    +size(100%)
+    font-size: 40pt
+    color: #fff
+    background-color: #1212aa
+    border: solid 1px #ccc
+    transition: 0.2s
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: 0.5s
+    &:hover
+      opacity: 0.8
+      background-color: #6767cc
+      color: #79bcff
+
+.swiper-container
+  width: 100%
+  height: 200px
+  padding: 50% 0
+.swiper-slide
+  text-align: center
+  background-color: #00f
+  font-size: 18px
+  background: #fff
+  display: flex
+  justify-content: center
+  align-items: center
+  border: solid 1px #000
