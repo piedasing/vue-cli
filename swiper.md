@@ -25,7 +25,7 @@
            }
          })
 
-#### 在 html 中，添加 Swiper 作用的區域
+#### 在 template 中，添加 Swiper 作用的區域
 > '.swiper-container' 要跟初始化的class名稱一樣，結構如下:
 
         .swiper-container
@@ -45,9 +45,15 @@
 
 > '.swiper-pagination'、'.swiper-button-prev/next'、'.swiper-scrollbar':是輪播圖的元件可選擇要不要用
 
+> 以上步驟結束即可完成 Swiper 的運作
 
+> 如果有使用 webpack 的 eslint 套件，會遇到 'no-new' 的錯誤，只要到 eslintrc.js內新增
+        
+        rules:{
+          'no-new': 0
+        }
 
-
+> 就可以解決囉
 
 
 
