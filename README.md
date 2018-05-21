@@ -89,3 +89,7 @@
 > 最後再加上一點 css 裝飾一下就完成拉~~
 
 ***
+
+#### 添加 Swiper(可滑動輪播圖)
+> [https://github.com/piedasing/vue-cli/blob/master/swiper.md](https://github.com/piedasing/vue-cli/blob/master/swiper.md)
+
