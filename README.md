@@ -2,6 +2,8 @@
 
 > 用 vue 搭配 onsenui 來製作手機優先(mobile first)的網頁
 
+> Demo: [https://piedasing.github.io/vue-cli/](https://piedasing.github.io/vue-cli/)
+
 ##### 安裝相關套件
 
 ###### 安裝 vue-cli
