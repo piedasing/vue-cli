@@ -9,7 +9,11 @@ import 'onsenui/css/onsen-css-components.css'
 // import CSS file
 import './sass/style.sass'
 
-import 'font-awesome/css/font-awesome.css'
+import fontawesome from '@fortawesome/fontawesome'
+import FontAwesomeIcon from '@fortawesome/vue-fontawesome'
+import solid from '@fortawesome/fontawesome-free-solid'
+import regular from '@fortawesome/fontawesome-free-regular'
+import brands from '@fortawesome/fontawesome-free-brands'
 
 // JS import
 import VueOnsen from 'vue-onsenui' // This already imports 'onsenui'
@@ -17,6 +21,12 @@ import VueOnsen from 'vue-onsenui' // This already imports 'onsenui'
 Vue.use(VueOnsen)
 
 Vue.config.productionTip = false
+
+fontawesome.library.add(solid) // Use any icon from the Solid style
+fontawesome.library.add(regular)
+fontawesome.library.add(brands)
+
+Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 /* eslint-disable no-new */
 new Vue({
