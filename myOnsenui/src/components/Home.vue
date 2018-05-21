@@ -3,18 +3,18 @@
     v-ons-toolbar
       div.center {{title}}
     .grid-container
-      .grid-item
-        i.fa.fa-bell(@click="push('Page1')")
-      .grid-item
-        i.fa.fa-address-book(@click="push('Page2')")
-      .grid-item
-        i.fa.fa-twitter(@click="push('Page3')")
-      .grid-item
-        i.fa.fa-calendar(@click="push('Page4')")
-      .grid-item
-        i.fa.fa-comment(@click="push('Page5')")
-      .grid-item
-        i.fa.fa-music(@click="push('Page6')")
+      .grid-item(@click="push('Page1')")
+        font-awesome-icon(:icon="['fas', 'bell']")
+      .grid-item(@click="push('Page2')")
+        font-awesome-icon(:icon="['fas', 'address-book']")
+      .grid-item(@click="push('Page3')")
+        font-awesome-icon(:icon="['fab', 'twitter']")
+      .grid-item(@click="push('Page4')")
+        font-awesome-icon(:icon="['fas', 'calendar']")
+      .grid-item(@click="push('Page5')")
+        font-awesome-icon(:icon="['fas', 'comment']")
+      .grid-item(@click="push('Page6')")
+        font-awesome-icon(:icon="['fas', 'music']")
 </template>
 
 <script>
