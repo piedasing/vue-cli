@@ -74,3 +74,26 @@
 > Swiper:
 
 ![Swiper.vue](https://github.com/piedasing/vue-cli/blob/swiper/imgs/swiper/swiper.png "Swiper.vue")
+
+##### 0522新增
+
+> 透過ajax撈取json資料，再傳入Swiper產生輪播圖
+
+> 首先，要先了解怎麼透過ajax撈資料
+
+        $.ajax({
+          url: dataUrl,
+          type: 'GET',
+          async: false,
+          success: function (res) {
+            console.log(res)
+            _this.data = JSON.parse(res)
+          },
+          error: function (xhr) {
+            console.log('抓取失敗')
+          }
+        })
+
+
+
+
