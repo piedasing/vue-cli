@@ -32,22 +32,39 @@
 
 ![index.js](https://github.com/piedasing/vue-cli/blob/swiper/imgs/vuex/index.png "index.js")
 
+***
+
 > actions.js
+
+* 用類似事件觸發的方式，觸發後執行該 commit，並將參數帶到 mutations.js 做運算
 
 ![actions.js](https://github.com/piedasing/vue-cli/blob/swiper/imgs/vuex/actions.png "actions.js")
 
+***
+
 > getters.js
+
+* 存放 getter 函式，只負責取 state 供元件使用
 
 ![getters.js](https://github.com/piedasing/vue-cli/blob/swiper/imgs/vuex/getters.png "getters.js")
 
+***
+
 > mutations.js
+
+* 做完運算後，改變 state
 
 ![mustations.js](https://github.com/piedasing/vue-cli/blob/swiper/imgs/vuex/mutations.png "mutation.js")
 
+***
+
 > mutations_type.js
+
+* 存放 mutation key
 
 ![mutations_type.js](https://github.com/piedasing/vue-cli/blob/swiper/imgs/vuex/mutation_type.png "mutations_type.js")
 
+***
 
 
 
