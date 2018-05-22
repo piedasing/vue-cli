@@ -1,6 +1,8 @@
 import Vue from 'vue'
+import Vuex from 'vuex'
 import App from './App'
 import router from './router'
+import store from './store'
 
 // Webpack CSS import
 import 'onsenui/css/onsenui.css'
@@ -19,6 +21,7 @@ import brands from '@fortawesome/fontawesome-free-brands'
 import VueOnsen from 'vue-onsenui' // This already imports 'onsenui'
 
 Vue.use(VueOnsen)
+Vue.use(Vuex)
 
 Vue.config.productionTip = false
 
@@ -34,6 +37,7 @@ window.$ = window.jQuery = require('jquery')
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

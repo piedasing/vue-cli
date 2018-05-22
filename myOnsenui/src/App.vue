@@ -15,17 +15,29 @@
 
 <script>
 import Home from './components/Home'
-import Page1 from './components/Page1'
-import Page2 from './components/Page2'
-import Page3 from './components/Page3'
-import Page4 from './components/Page4'
-import Page5 from './components/Page5'
-import Page6 from './components/Page6'
+import Begin from './components/Begin'
+import CallComponent from './components/CallComponent'
+import PushPages from './components/PushPages'
+import UseAJAX from './components/UseAJAX'
+import GotoCtoF from './components/GotoCtoF'
+import VuexPractice from './components/VuexPractice'
+import CtoF from './components/CtoF'
+import MyVuex from './components/MyVuex'
+import Page8 from './components/Page8'
 
 export default {
   name: 'App',
   components: {
-    Home, Page1, Page2, Page3, Page4, Page5, Page6
+    Home,
+    Begin,
+    CallComponent,
+    PushPages,
+    UseAJAX,
+    GotoCtoF,
+    VuexPractice,
+    CtoF,
+    MyVuex,
+    Page8
   },
   data () {
     return {
