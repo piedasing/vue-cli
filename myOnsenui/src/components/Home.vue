@@ -18,14 +18,8 @@
 </template>
 
 <script>
-import Page1 from './Page1'
-import Page2 from './Page2'
-
 export default {
   name: 'Home',
-  components: {
-    Page1, Page2
-  },
   data () {
     return {
       title: 'Welcome to My Vue.js App'

@@ -2,9 +2,11 @@
   v-ons-page
     v-ons-toolbar
       div.left
-        v-ons-back-button Home
+        v-ons-back-button back
       div.center Page 3
-    p(style="text-align: center") This is the page3
+    .btn-container
+      .mybtn(@click="push('Page1')") Page1
+      .mybtn(@click="push('Page2')") Page2
 
 </template>
 
@@ -13,13 +15,17 @@ export default {
   name: 'Page3',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+    }
+  },
+  methods: {
+    push (Page) {
+      this.$emit('push-page', Page)
     }
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="sass">
 
 </style>
