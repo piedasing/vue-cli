@@ -68,7 +68,65 @@
 
 ***
 
+### 實作(按鈕加減數字)
 
+#### page.vue
 
+> 在template上添加按鈕，以及顯示目前計數值
 
+    .container
+        h2 count:
+        span.count {{count}}
+    .set Set number:
+        input(type="number" v-model="num")
+        br
+        button(@click="actionIncrease(num)") +{{num}}
+        button(@click="actionDecrease(num)") -{{num}}
+        
+>> actionIncrease、actionDecrease 透過 v-on:click 來綁定 action
+
+> 在 actions.js 添加 action
+
+    import * as types from './mutations_type.js'
+
+    export const actionIncrease = ({ commit }, num) => {
+        console.log('actionIncrease')
+        commit(types.INCREASE, num)
+    }
+
+    export const actionDecrease = ({ commit }, num) => {
+        console.log('actionDecrease')
+        commit(types.DECREASE, num)
+    }
+
+>> 透過 commit，將參數傳遞給 mutations.js
+
+> 在 mutations_type.js 添加 mutations.js 要用的key
+
+    export const INCREASE = 'INCREASE'
+    export const DECREASE = 'DECREASE'
+
+>> 名稱要與 commit 的一樣，不然會找不到!
+
+> 在 mutations.js 添加 state、 mutations
+
+    import * as types from './mutations_type.js'
+    export const state = {
+        count: 0,
+    }
+
+    export const mutations = {
+        // action 發出 commit 會對應到 mutation 使用的是 Object key 方式
+        [types.INCREASE] (state, num) {
+            // 在 mutation 改變 state（只有 mutation 可以改變！）
+            state.count += parseInt(num)
+            console.log('INCREASE', num, 'state?', state.count)
+        },
+        [types.DECREASE] (state, num) {
+            state.count -= parseInt(num)
+            console.log('DECREASE', num, 'state?', state.count)
+        }
+    }
+
+>> 只有在 mutations 中才能修改 state 的內容
 
