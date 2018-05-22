@@ -3,7 +3,8 @@
   height: $h
   
 html,body
-  +size(450px,100%)
+  +size(520px,100%)
+  background-color: #000
   margin: 0 auto
 
 #app
@@ -56,6 +57,26 @@ html,body
   align-items: center
   border: solid 1px #000
 
-@media screen and(max-width: 480)
+.btn-container
+  +size(100%)
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  flex-wrap: wrap
+  .mybtn
+    flex: 1 1 auto
+    background-color: #008
+    color: white
+    box-shadow: 5px 5px 1px 1px #aaa
+    height: 100px
+    line-height: 100px
+    margin: 15px
+    &:hover
+      background-color: #ccc
+      color: #008
+      border: solid 3px #00a
+      box-shadow: 0px 0px 0px 0px #aaa, inset -4px -4px 1px 1px #aaa
+  
+@media all and(max-width: 600px)
   html,body
-    +size(100%)
+    width: 100%

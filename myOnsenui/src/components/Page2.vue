@@ -4,7 +4,8 @@
       div.left
         v-ons-back-button back
       div.center Page 2
-    Swiper(:items="data")
+    Swiper(:items="data" :swiper="swiper")
+    Swiper(:items="data" :swiper="swiper")
 </template>
 
 <script>
@@ -12,18 +13,32 @@ import Swiper from './Swiper'
 
 const data = [
   {
-    'title': 'first',
-    'img': '123'
+    'name': 'first',
+    'cover': '123'
   },
   {
-    'title': 'second',
-    'img': '456'
+    'name': 'second',
+    'cover': '456'
   },
   {
-    'title': 'third',
-    'img': '789'
+    'name': 'third',
+    'cover': '789'
   }
 ]
+
+const swiper = {
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 15,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  }
+}
 
 export default {
   name: 'Page2',
@@ -32,13 +47,13 @@ export default {
   },
   data () {
     return {
-      data: data
+      data: data,
+      swiper: swiper
     }
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 
 </style>

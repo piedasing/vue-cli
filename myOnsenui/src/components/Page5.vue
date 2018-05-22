@@ -2,10 +2,8 @@
   v-ons-page
     v-ons-toolbar
       div.left
-        v-ons-back-button Home
-      div.center Page 5
-    p(style="text-align: center") This is the page5
-
+        v-ons-back-button back
+      div.center Page5
 </template>
 
 <script>

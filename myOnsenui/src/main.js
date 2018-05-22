@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App'
-// import router from './router'
+import router from './router'
 
 // Webpack CSS import
 import 'onsenui/css/onsenui.css'
@@ -28,9 +28,12 @@ fontawesome.library.add(brands)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
+window.$ = window.jQuery = require('jquery')
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  router,
   components: { App },
   template: '<App/>'
 })
