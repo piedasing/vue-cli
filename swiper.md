@@ -104,7 +104,9 @@
 
 > 完整程式如下:
 
-![Page4.vue]( "Page4.vue")
+dataUrl : https://raw.githubusercontent.com/piedasing/json_test/master/json/document.json
+
+![Page4.vue](https://github.com/piedasing/vue-cli/blob/master/imgs/page4.png "Page4.vue")
 
 * 除了用ajax撈取資料外，Swiper的初始化參數也需要新增以下兩行
 * 當Swiper有變動時，就會重新初始化
