@@ -85,7 +85,9 @@
         
 >> actionIncrease、actionDecrease 透過 v-on:click 來綁定 action
 
-> 在 actions.js 添加 action
+***
+
+### 在 actions.js 添加 action
 
     import * as types from './mutations_type.js'
 
@@ -101,14 +103,18 @@
 
 >> 透過 commit，將參數傳遞給 mutations.js
 
-> 在 mutations_type.js 添加 mutations.js 要用的key
+***
+
+### 在 mutations_type.js 添加 mutations.js 要用的key
 
     export const INCREASE = 'INCREASE'
     export const DECREASE = 'DECREASE'
 
 >> 名稱要與 commit 的一樣，不然會找不到!
 
-> 在 mutations.js 添加 state、 mutations
+***
+
+### 在 mutations.js 添加 state、 mutations
 
     import * as types from './mutations_type.js'
     export const state = {
