@@ -30,23 +30,23 @@
 
 * 將其他檔案 import 進來，並將模式設定成嚴格(禁止直接修改state)
 
-![index.js]( "index.js")
+![index.js](https://github.com/piedasing/vue-cli/blob/swiper/imgs/vuex/index.png "index.js")
 
 > actions.js
 
-![actions.js]( "actions.js")
+![actions.js](https://github.com/piedasing/vue-cli/blob/swiper/imgs/vuex/actions.png "actions.js")
 
 > getters.js
 
-![getters.js]( "getters.js")
+![getters.js](https://github.com/piedasing/vue-cli/blob/swiper/imgs/vuex/getters.png "getters.js")
 
 > mutations.js
 
-![mustations.js]( "mutation.js")
+![mustations.js](https://github.com/piedasing/vue-cli/blob/swiper/imgs/vuex/mutations.png "mutation.js")
 
 > mutations_type.js
 
-![mutations_type.js]( "mutations_type.js")
+![mutations_type.js](https://github.com/piedasing/vue-cli/blob/swiper/imgs/vuex/mutation_type.png "mutations_type.js")
 
 
 
