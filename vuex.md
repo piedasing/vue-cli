@@ -26,6 +26,8 @@
 * mutations_type.js
 * mutations.js
 
+***
+
 * index.js
 
 > 將其他檔案 import 進來，並將模式設定成嚴格(禁止直接修改state)
