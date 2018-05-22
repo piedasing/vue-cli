@@ -75,25 +75,41 @@
 
 ![Swiper.vue](https://github.com/piedasing/vue-cli/blob/swiper/imgs/swiper/swiper.png "Swiper.vue")
 
+***
+
 ##### 0522新增
 
 > 透過ajax撈取json資料，再傳入Swiper產生輪播圖
 
 > 首先，要先了解怎麼透過ajax撈資料
 
-        $.ajax({
-          url: dataUrl,
-          type: 'GET',
-          async: false,
-          success: function (res) {
-            console.log(res)
-            _this.data = JSON.parse(res)
-          },
-          error: function (xhr) {
-            console.log('抓取失敗')
-          }
-        })
+        $.ajax({
+        url: dataUrl,
+        type: 'GET',
+        async: false,
+        success: function (res) {
+          console.log(res)
+          _this.data = JSON.parse(res)
+        },
+        error: function (xhr) {
+          console.log('抓取失敗')
+        }
+      })
 
+* dataUrl是要去撈的資料所存放的url
+* 撈取成功就會將撈出來的資料存回來vue的data中
+* 使用created呼叫這個ajax function，就可以在vue渲染網頁前完成撈取，如果是用mounted，就會導致渲染後才撈取資料，Swiper的分頁就會出問題(因為不知道資料有幾筆)
 
+***
 
+> 完整程式如下:
+
+![Page4.vue]( "Page4.vue")
+
+* 除了用ajax撈取資料外，Swiper的初始化參數也需要新增以下兩行
+* 當Swiper有變動時，就會重新初始化
+
+        observer: true,
+        observeParents: true
+        
 
